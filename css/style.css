@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7ECDE;
+    overflow: auto;
+}
+h1{
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h1::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: #FEC260;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+h1:hover::after{
+    height: 60%;
+}
+.bmBody{
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+}
+.slog{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+table{
+    text-align: center;
+}
+table td{
+    vertical-align: middle;
+}
+table img{
+    width: 100px;
+}
+table a{
+    background-color: #a5b942;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+}
+table a:hover{
+    background-color: #8A9E23;
+}
+.redC{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 60, 0);
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+.orngC{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    top:20px;
+    left: 55px;
+}
+.grnC{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top:20px;
+    left: 90px;
+}
+.vClose{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
