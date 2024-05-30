@@ -4,6 +4,7 @@
 body{
     background-color: #F7ECDE;
     overflow: auto;
+    min-height: 100vh;
 }
 h1{
     width: fit-content;
@@ -30,7 +31,7 @@ h1:hover::after{
 }
 .slog{
     background-image: linear-gradient(to right, #3ca55c, #b5ac49);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .form-control:focus{
@@ -85,4 +86,7 @@ table a:hover{
     position: absolute;
     top:20px;
     right: 20px;
+}
+.alrtMsg{
+    width: 500px;
 }
