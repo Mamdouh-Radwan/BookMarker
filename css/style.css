@@ -90,3 +90,24 @@ table a:hover{
 .alrtMsg{
     width: 500px;
 }
+
+@media screen and (max-width: 576px){
+    .bmBody p{
+        font-size: 18px !important;
+    }
+    table thead tr th{
+        font-size: 10px;
+    }
+    table tbody tr td a{
+        font-size: 12px;
+    }
+    table tbody tr td button{
+        font-size: 12px !important;
+    }
+    .alrtMsg p{
+        font-size: 14px !important;
+    }
+    .alrtMsg li{
+        font-size: 12px !important;
+    }
+}
