@@ -6,6 +6,11 @@ var alertMsg = document.getElementById("validationAlert");
 
 var siteList = [];
 
+var path = location.pathname.split('/')
+path.pop()
+var basicUrl = path.join('/')
+console.log(basicUrl);
+
 if(localStorage.getItem('siteList')){
   siteList = JSON.parse(localStorage.getItem('siteList'));
   displayBookmarks(siteList);
