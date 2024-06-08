@@ -9,7 +9,7 @@ var siteList = [];
 var path = location.pathname.split('/')
 path.pop()
 var basicUrl = path.join('/')
-console.log(basicUrl);
+console.log(location.hostname+basicUrl);
 
 if(localStorage.getItem('siteList')){
   siteList = JSON.parse(localStorage.getItem('siteList'));
